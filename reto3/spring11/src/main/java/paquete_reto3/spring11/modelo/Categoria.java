@@ -35,8 +35,18 @@ public class Categoria implements Serializable {
     @JsonIgnoreProperties("category")//ignoramos la instancia creada con ralacionada
     private List<Disfraz> costumes;
     //************************************************************************************************ */
+    
+    
     public Integer getId() {
         return id;
+    }
+    public Categoria(Integer id, String name, String description, List<Disfraz> costumes) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.costumes = costumes;
+    }
+    public Categoria() {
     }
     public void setId(Integer id) {
         this.id = id;

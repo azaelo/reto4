@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 
 
 @Entity
-@Table(name = "costumes") //crea tabla y base de datos(schema)
+@Table(name = "costume") //crea tabla y base de datos(schema)
 public class Disfraz implements Serializable {
 
     @Id //  clave primaria
